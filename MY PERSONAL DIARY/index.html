@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Diary</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <h1>My Personal Diary ❤️</h1>
+        </div>
+
+        <div class="container">
+            <div class="data-container">
+                <h2>A New Journey</h2>
+                <h5>20-08-2024</h5>
+                <p>I started this "My Personal Diary" project at 10.40 p.m. with lots of excitement. Hope this project end up successfully.</p>
+                <button onclick="deletedata(event)">Delete</button>
+            </div>
+        </div>
+
+        <div class="popup-overlay"></div>
+        <div class="popup-box">
+            <h2>Add today's memories 😊</h2>
+            <form>
+                <input type="text" placeholder="your title for today's memories" id="data-title">
+                <input type="date" id="data-date">
+                <textarea placeholder="share your memories here..." id="data-description"></textarea>
+                <button id="add-data">ADD</button>
+                <button id="cancel-data">CANCEL</button>
+            </form>
+        </div>
+
+        <button class="add-button" id="add-popup-button">+</button>
+
+        <script src="script.js"></script>
+    </body>
+</html>
